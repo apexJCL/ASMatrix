@@ -1,0 +1,1960 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>documentacion</title></head><body><article class="markdown-body"><style>
+    body {
+        width: 80%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 38pt;
+        font-weight: 300;
+    }
+
+    .spreadsheet iframe{
+        width: 100%;
+        height: 500px;
+    }
+
+    .thumbnail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 240px;
+
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+.image {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+     transform:scale(1.5);
+}
+
+.center {
+    text-align: center;
+}
+</style>
+
+<div class="center">
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE5IDE5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOSAxOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGNpcmNsZSBjeD0iMi41IiBjeT0iMTYuNSIgcj0iMi41IiBmaWxsPSIjMGViY2MyIi8+Cgk8Y2lyY2xlIGN4PSIyLjUiIGN5PSI5LjUiIHI9IjIuNSIgZmlsbD0iIzBlYmNjMiIvPgoJPGNpcmNsZSBjeD0iMi41IiBjeT0iMi41IiByPSIyLjUiIGZpbGw9IiMwZWJjYzIiLz4KCTxjaXJjbGUgY3g9IjkuNSIgY3k9IjE2LjUiIHI9IjIuNSIgZmlsbD0iIzBlYmNjMiIvPgoJPGNpcmNsZSBjeD0iOS41IiBjeT0iOS41IiByPSIyLjUiIGZpbGw9IiMwZWJjYzIiLz4KCTxjaXJjbGUgY3g9IjkuNSIgY3k9IjIuNSIgcj0iMi41IiBmaWxsPSIjMGViY2MyIi8+Cgk8Y2lyY2xlIGN4PSIxNi41IiBjeT0iMTYuNSIgcj0iMi41IiBmaWxsPSIjMGViY2MyIi8+Cgk8Y2lyY2xlIGN4PSIxNi41IiBjeT0iOS41IiByPSIyLjUiIGZpbGw9IiMwZWJjYzIiLz4KCTxjaXJjbGUgY3g9IjE2LjUiIGN5PSIyLjUiIHI9IjIuNSIgZmlsbD0iIzBlYmNjMiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" width="25%"/>
+</div>
+
+<div class="title">
+    <p>Matriz de LED's - Linux x64 ASM</p>
+</div>
+
+<hr />
+<h2 id="introduccion"><a name="user-content-introduccion" href="#introduccion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introducción</h2>
+<p>El proyecto de la matriz de LED&rsquo;s consta de la construcción de la misma, así como de su control por medio del puerto <strong>Serial</strong> del Arduino y un programa hecho en ensamblador de 64 bits para <strong>Linux</strong>:</p>
+<ul>
+<li>Arduino con 12 salidas (Para este caso se empleó el <strong><a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega 2560</a></strong>)</li>
+<li>8 LED&rsquo;s por Fila, 8 Filas: <strong>64 LED&rsquo;s en total</strong></li>
+<li>Registro de desplazamiento de 8 bits <a href="#" onclick="window.open('assets/74hc595.pdf');"><strong>74HC595</strong></a></li>
+<li>Arreglo de Transistores Darlington <a href="#" onclick="window.open('assets/uln2803a.pdf');"><strong>ULN2803A</strong></a></li>
+<li>Tablilla Preperforada</li>
+<li>8 Resistencias de <strong>220Ω</strong></li>
+</ul>
+<h5 id="notas"><a name="user-content-notas" href="#notas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Notas</h5>
+<p><strong><em>Tanto los LED&rsquo;s como la tablilla podrían no ser necesarios si se tiene una Protoboard lo suficientemente grande y se adquiere una matríz prefabricada de LED&rsquo;s</em></strong>  </p>
+<h2 id="teoria-basica-sobre-el-funcionamiento"><a name="user-content-teoria-basica-sobre-el-funcionamiento" href="#teoria-basica-sobre-el-funcionamiento" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Teoría básica sobre el funcionamiento</h2>
+<p>La función principal de una matriz de LED&rsquo;s es común: <em>desplegar algo</em>. Puede ir desde una simple figura o hasta un patrón o texto que va de derecha a izquierda (o viceversa).</p>
+<p>El elemento importante es el registro de desplazamiento <strong>74HC595</strong>, el cual es un circuito integrado del tipo <strong>SIPO</strong> (<em>serial in, parallel out</em>).<br />
+Este actuará como una memoria temporal de <strong>8 bits</strong>, <strong>1 bit para cada LED</strong>. </p>
+<p>Esto, sumado a un procedimiento común de manejar las matrices de LED&rsquo;s, conocido como <em>escaneo</em> y un <em>defecto humano</em> conocido como <a href="https://es.wikipedia.org/wiki/Persistencia_de_la_visi%C3%B3n"><strong>persistencia de visión</strong></a> hacen que parezca que combinados, la matriz está encendida en su totalidad siempre, pero eso no es así.</p>
+<h3 id="acerca-del-registro"><a name="user-content-acerca-del-registro" href="#acerca-del-registro" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Acerca del Registro</h3>
+<p>El registro tiene un comportamiento similar al siguiente diagrama:<br />
+<div class="center image"><br />
+    <img src="assets/register.png" alt=""><br />
+</div></p>
+<p>Esto indica que el registro recibirá el byte a desplegar para cada fila, y así lograr, junto con la combinación de las otras técnicas anteriormente mencionadas, una <strong>memoria de video de 8 bytes</strong> (<em>un byte por fila</em>).</p>
+<p>El encargado de controlar que fila está activa para el proceso de escaneo, es el circuito <strong>ULN2803A</strong>, el cual es un arreglo de transistores Darlington, el cual se encargará de, dada la señal, poner a tierra la fila indicada, ya que el registro le inyecta el voltaje, así pues, estando a tierra, la fila enciende.</p>
+<h3 id="ejemplo-de-encendido"><a name="user-content-ejemplo-de-encendido" href="#ejemplo-de-encendido" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ejemplo de encendido</h3>
+<p>Supongamos que el registro recibe el byte <code>B10011001</code>, esto hará que la fila activada en el momento, encienda de la siguiente manera:<br />
+<div class="center image"><br />
+    <img src="assets/btest.png" alt=""><br />
+</div></p>
+<p>Así pues, al recibir una secuencia completa de 64 bits, encendería de la siguiente manera:<br />
+<div class="center image"><img src="assets/griddemo.png" alt=""></div></p>
+<h1 id="construccion-de-la-matriz"><a name="user-content-construccion-de-la-matriz" href="#construccion-de-la-matriz" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Construcción de la matriz</h1>
+<p>Si se ha optado por construir la matriz, se puede usar el siguiente diagrama como referencia para interconectar los LED&rsquo;s:<br />
+<div class="center image"><br />
+    <img src="assets/matrix.jpg" alt=""><br />
+</div><br />
+Se ha usado este diagrama para diseñar la matriz de LED&rsquo;s que se mostrará más adelante.</p>
+<h3 id="soldando-la-matriz"><a name="user-content-soldando-la-matriz" href="#soldando-la-matriz" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Soldando la matriz</h3>
+<hr />
+<p>Primero se va soldando fila a fila, procurando que los cátodos queden todos en serie, mientras que los ánodos de cada columna también irán en serie:<br />
+<div class="center image"><br />
+    <img style="max-width: 512px" src="assets/mat1.jpg" alt=""><br />
+</div><br />
+<div class="center image"><br />
+    <img style="max-width: 512px" src="assets/mat2.jpg" alt=""><br />
+</div><br />
+<div class="center image"><br />
+    <img style="max-width: 512px" src="assets/mat3.jpg" alt=""><br />
+</div></p>
+<h3 id="interconexiones"><a name="user-content-interconexiones" href="#interconexiones" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Interconexiones</h3>
+<hr />
+<p>Se ha tomado como ejemplo <a href="http://embedded-lab.com/blog/making-a-8x40-led-matrix-marquee-using-shift-registers/">este diagrama</a> que muestra como conectar <strong>5 matrices de LED&rsquo;s</strong> a diferentes registros y usando un sólo arreglo darlington para controlarlos, logicamente para este proyecto se simplificó a 1 matriz:<br />
+<div class="center image"><br />
+    <img src="assets/circuit.jpg" alt=""><br />
+</div></p>
+<p>Se siguió el mismo esquema:  </p>
+<ul>
+<li>Conectar las salidas del registro a los pines de las columnas de la matriz previamente construida, en serie con las resistencias para evitar quemar los LED&rsquo;s, ya que la salida de voltaje del registro es de <strong>5v</strong>.</li>
+<li>Conectar los pines del arreglo a los pines de las filas de la matriz.</li>
+<li>Soldar las conexiones de los pines del registro a unos cables para poder conectarlos al Arduino</li>
+</ul>
+<h3 id="74hc595-pines-a-usar"><a name="user-content-74hc595-pines-a-usar" href="#74hc595-pines-a-usar" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>74HC595: Pines a usar</h3>
+<p>El registro cuenta con unos pines que tienen sus características designadas:  </p>
+<ul>
+<li><strong>Entrada de datos (SI)</strong> - Por aquí recibe de manera serial los datos a almacenar</li>
+<li><strong>Reloj (SCK)</strong> - Controla la entrada de información, leyendo un bit en cada estado de <strong>high</strong></li>
+<li><strong>Activar salida (OE)</strong> - Este es activo a tierra, lo que quiere decir que habilitará que lo que esté almacenado en el registro al estar de esa manera.</li>
+<li><strong>Reset (SCLR)</strong> - Reinicia el valor que tenga almacenado el registro</li>
+<li><strong>Reloj de salida (RCK)</strong> - Este controla el paso de la información del almacenamiento interno a la salida paralela del mismo<br />
+<div class="center image"><img src="assets/74hc595.png" alt=""></div></li>
+</ul>
+<h3 id="uln2803a-pines-a-usar"><a name="user-content-uln2803a-pines-a-usar" href="#uln2803a-pines-a-usar" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>ULN2803A: Pines a usar</h3>
+<p>Prácticamente se emplearán todos los pines disponibles, debido a que tenemos 8 tierras, y cada una va conectada a cada salida del mismo.<br />
+<div class="center image"><img src="assets/uln2803a.png" alt=""></div></p>
+<ul>
+<li><strong>I1 - I8</strong> - Estas entradas van a las salidas configuradas en el Arduino, son las que se encargarán de alternar las filas</li>
+<li><strong>O1 - O8</strong> - Cada uno a los pines de fila de la matriz (<em>cátodos</em>)</li>
+<li><strong>COMMON</strong> - Este pin se deja sin soldar, ya que es empleado cuando se manejan motores</li>
+<li><strong>GND</strong> - Soldado a tierra</li>
+</ul>
+<h3 id="como-queda-todo-conectado"><a name="user-content-como-queda-todo-conectado" href="#como-queda-todo-conectado" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>¿Cómo queda todo conectado?</h3>
+<h4 id="registro"><a name="user-content-registro" href="#registro" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Registro</h4>
+<p><div class="center image"><img src="assets/74hc595%20soldado.jpg" alt=""></div>  </p>
+<h4 id="arreglo"><a name="user-content-arreglo" href="#arreglo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Arreglo</h4>
+<p><div class="center image"><img src="assets/uln2803soldado.jpg" alt=""></div><br />
+<div class="center image"><img src="assets/uln2803conexiones.jpg" alt=""></div></p>
+<h1 id="codigo-arduino"><a name="user-content-codigo-arduino" href="#codigo-arduino" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Código Arduino</h1>
+<p>El Arduino estará configurado de una manera muy simple, donde prácticamente sólo sirve como interfaz entre el registro y el programa en ASM.<br />
+<strong>El programa realiza lo siguiente:  </strong></p>
+<ul>
+<li>Encender/Apagar filas</li>
+<li>Enviar información al registro</li>
+<li>Activar la salida del registro</li>
+<li>Reiniciar el registro</li>
+</ul>
+<h4 id="codigo"><a name="user-content-codigo" href="#codigo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Código</h4>
+<pre><code class="C">// Pines para controlar el registro de corrimiento
+#define dataPin 22
+#define latchPin 23
+#define clockPin 24
+#define resetPin 7
+// Pines para el ULN2803
+#define row1 30
+#define row2 31
+#define row3 32
+#define row4 33
+#define row5 34
+#define row6 35
+#define row7 36
+#define row8 37
+#define dt 1
+
+byte buffer[8] = {
+  0x00,0x0E,0x11,0x03,0x0D,0x11,0x21,0x1F
+  };
+
+byte pos = 0;
+
+int incomingByte = 0;
+
+void updateRegister(byte data){
+    resetRegister(0);
+    digitalWrite(latchPin, LOW);
+    shiftOut(dataPin, clockPin, LSBFIRST, data);
+    digitalWrite(latchPin, HIGH);
+}
+
+void resetRegister(long dl){
+    digitalWrite(resetPin, LOW);
+    delay(dl);
+    digitalWrite(resetPin, HIGH);
+}
+
+void enableRow(byte row){
+    digitalWrite((30+row), HIGH);
+}
+
+void disableRows(){
+    for(byte i = row1; i &lt;= row8; i++) digitalWrite(i, LOW);
+}
+
+void setup()
+{
+    Serial.begin(9600);     // Inicia la comunicación serial a 9600bps
+    // Configuramos los pines del Arduino como salidas
+    for(int i=row1; i&lt;=row8; i++){
+        pinMode(i, OUTPUT);
+    }
+    pinMode(dataPin, OUTPUT);
+    pinMode(latchPin, OUTPUT);
+    pinMode(clockPin, OUTPUT);
+    pinMode(resetPin, OUTPUT);
+    resetRegister(0);    
+}
+
+void loop()
+{
+    if(buffer != NULL){
+        for(pos = 0; pos &lt;=7; pos++){
+            disableRows();
+            updateRegister(buffer[pos]);
+            enableRow(pos);
+            delay(dt);
+        }
+    }
+    // Verifica si hay datos por recibir
+    if (Serial.available() &gt; 0) {
+        // Leeremos 8 bytes dentro del buffeer
+        int amount = Serial.readBytes(buffer, 8);
+        if( amount &lt; 8){
+            for(int i = amount; i &lt; 8; i++)
+                buffer[i] = 0x00; // Poniendo a 0 los bytes incompletos
+        }
+    }
+}
+
+</code></pre>
+
+<h3 id="explicacion"><a name="user-content-explicacion" href="#explicacion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Explicación</h3>
+<hr />
+<p>Esta sección se encarga de definir los pines que se emplearán para controlar la circuitería de la matriz:  </p>
+<p><strong>Registro</strong><br />
+<pre><code class="C">// Pines para controlar el registro de corrimiento
+#define dataPin 22
+#define latchPin 23
+#define clockPin 24
+#define resetPin 7
+</code></pre></p>
+<p><strong>Arreglo</strong><br />
+<pre><code class="C">// Pines para el ULN2803
+#define row1 30
+#define row2 31
+#define row3 32
+#define row4 33
+#define row5 34
+#define row6 35
+#define row7 36
+#define row8 37
+</code></pre></p>
+<p>Cómo se estará escaneando la matriz, se define un tiempo. Esenciamente debería ser 0, para que el mismo microcontrolador trabaje el proceso a una velocidad de <strong>16Mhz</strong>, pero se le puso el retraso de <strong>1ms</strong> para hacer un poco más brillante la salida de los LED&rsquo;s<br />
+<pre><code>#define dt 1
+</code></pre></p>
+<p>Este código controla instrucciones básicas del registro, como <strong>actualizar, reset</strong><br />
+<pre><code>void updateRegister(byte data){
+    resetRegister(0);
+    digitalWrite(latchPin, LOW);
+    shiftOut(dataPin, clockPin, LSBFIRST, data);
+    digitalWrite(latchPin, HIGH);
+}
+
+void resetRegister(long dl){
+    digitalWrite(resetPin, LOW);
+    delay(dl);
+    digitalWrite(resetPin, HIGH);
+}
+</code></pre></p>
+<p>El siguiente código controla al arreglo para ir ciclando las filas<br />
+<pre><code class="C">void enableRow(byte row){
+    digitalWrite((30+row), HIGH);
+}
+
+void disableRows(){
+    for(byte i = row1; i &lt;= row8; i++) digitalWrite(i, LOW);
+}
+</code></pre></p>
+<p>Aquí el primer método lo que hace es configurar al Arduino y sus pines en sus modos correspondientes, tal como <strong>salida</strong> y manda un pulso de reinicio al registro.<br />
+El segundo bloque es el ciclo que está ejecutando el Arduino, el cual está mostrando en la matriz la información en el buffer y esperando a recibir más información por medio de la comunicación serial</p>
+<pre><code class="C">
+void setup()
+{
+    Serial.begin(9600);     // Inicia la comunicación serial a 9600bps
+    // Configuramos los pines del Arduino como salidas
+    for(int i=row1; i&lt;=row8; i++){
+        pinMode(i, OUTPUT);
+    }
+    pinMode(dataPin, OUTPUT);
+    pinMode(latchPin, OUTPUT);
+    pinMode(clockPin, OUTPUT);
+    pinMode(resetPin, OUTPUT);
+    resetRegister(0);    
+}
+
+void loop()
+{
+    if(buffer != NULL){
+        for(pos = 0; pos &lt;=7; pos++){
+            disableRows();
+            updateRegister(buffer[pos]);
+            enableRow(pos);
+            delay(dt);
+        }
+    }
+    // Verifica si hay datos por recibir
+    if (Serial.available() &gt; 0) {
+        // Leeremos 8 bytes dentro del buffeer
+        int amount = Serial.readBytes(buffer, 8);
+        if( amount &lt; 8){
+            for(int i = amount; i &lt; 8; i++)
+                buffer[i] = 0x00; // Poniendo a 0 los bytes incompletos
+        }
+    }
+}
+</code></pre>
+
+<h1 id="ensamblador"><a name="user-content-ensamblador" href="#ensamblador" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ensamblador</h1>
+<p>Para esto, se manejó ensamblador en <strong>Linux x64</strong>  para hacer de esto más fácil, ya que es menos restrictivo en cuanto al acceso de los puertos, como sabemos, en Linux todo es un archivo, y sólo basta con abrirlo para poder manipularlo.  En este caso, el archivo del Arduino es <strong>/dev/ttyACM0</strong>.</p>
+<h3 id="implementacion-de-las-letras"><a name="user-content-implementacion-de-las-letras" href="#implementacion-de-las-letras" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Implementación de las letras</h3>
+<p>Antes que nada, el registro recibirá datos, <strong>byte</strong> para ser específico, entonces, lo que se quiera desplegar se tiene que <strong>formatear</strong> en ese espacio de información.  Como tenemos un espacio de 8 x 8, tenemos en total <strong>64 bits</strong>, o bien <strong>8 bytes</strong>, los cuales son más que suficientes para representar cómodamente letras en el clásico estilo de <em>8 bits</em>.<br />
+Para esto, se creó por comodidad, una hoja de cálculo, la cual representa la matriz, y por medio de 0&rsquo;s los <strong>LED&rsquo;s apagados</strong> y 1&rsquo;s <strong>LED&rsquo;s encendidos</strong> respectivamente.<br />
+<div class="spreadsheet"><br />
+    <iframe src="https://docs.google.com/spreadsheets/d/1lJLVQxV9emr97GJ1VcjLFo-Zj_EIf3d502triED3T_4/pubhtml?gid=203404913&amp;single=true&amp;widget=true&amp;headers=false"></iframe><br />
+</div>  <a href="https://docs.google.com/spreadsheets/d/1lJLVQxV9emr97GJ1VcjLFo-Zj_EIf3d502triED3T_4/edit?usp=sharing"><strong>Descarga la hoja aquí</strong></a><br />
+Lo que hace la hoja es mapear cada fila a un byte en representación decimal, luego se convierte a hexadecimal y para finalizar, concatena los 8 bytes para darnos una representación, la cual podemos poner como información directamente en memoria para guardarlo y después poder enviarla al registro.</p>
+<h2 id="codigo_1"><a name="user-content-codigo_1" href="#codigo_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Código</h2>
+<p><strong>Código Principal (main.asm)</strong></p>
+<pre><code class="nasm">; External imports
+EXTERN print_stdout, read_keystroke, show_menu, clear_screen, open_file
+EXTERN close_file, show_lmenu, open_file_parameter, write_to_fd, read_from_fd
+EXTERN clean_stack, arduino_display_char, show_pmenu, arduino_display_pattern
+
+; File handling things
+%define RW          0q777   ; Octal CHMOD 777 (Read Write Execute)
+%define O_WRONLY    1       ; Mode: Write only
+%define O_RDWR      2       ; Mode: Read/Write
+
+; Basic linux RAX syscall
+%define SYS_EXIT    0x3c
+%define SYS_WRITE   0x1
+%define SYS_OPEN    0x2
+; Basic File Descriptors
+%define STDIN       0x0
+%define STDOUT      0x1
+
+section .data
+    NEWLINE:    db  10
+    ; Messages
+    OK:         db  &quot;Ok!&quot;, 10
+    OKL:        equ $-OK
+    ; Error Messages
+    ENOFILE:    db  &quot;Error al abrir (No existe o no tiene permisos)&quot;,10
+    ENOFILES:   equ $-ENOFILE
+    EINVCHAR:   db  &quot;Caracter no reconocido, intente con letras o números&quot;,10
+    EINVCHARS:  equ $-EINVCHAR
+
+section .bss
+    screen:         resb    8   ; 8 bytes reserved, 1 for each row
+    screens:        equ     8   ; 8 bytes long, screen size (8 bits x 8 bits)
+    keybuffer:      resb    2   ; 2 bytes for user input
+    databuffer:     resb    128 ; 128 Buffer Bytes
+    databuffers:    equ     128 ; Size of Buffer for reference
+    ttyfd:          resb    8   ; 2 bytes for TTY File Descriptor
+    bytesread:      resb    8
+
+section .text
+
+GLOBAL _start
+
+; General Program
+; Last modified: mié 25 may 2016 21:31:33 CDT
+
+_start:
+    nop
+    ; Open TTY specified in parameters
+    push ttyfd             ; FD Memory Address
+    push O_RDWR            ; Flags
+    push RW                ; Mode
+    call open_file_parameter
+    ; If FD is less than 0, no file was opened (error)
+    cmp rax, 0
+    jl _end_error          ; So we jump to exit
+    ; Clean stack
+    push 3
+    call clean_stack
+    ; Displays menu
+    jmp display_menu
+    nop
+
+display_menu:
+    call clear_screen
+    call show_menu          ; Call procedure Show Menu
+    ; read from stdin
+    push keybuffer
+    call read_keystroke
+    menu_select:
+        xor rax, rax            ; Clean RAX
+        mov al, byte[keybuffer] ; Moves the key to the low register part
+        cmp al, &quot;p&quot;             ; If p, pattern
+        je pattern
+        cmp al, &quot;l&quot;
+        je letter               ; If l, letter
+        cmp al, &quot;q&quot;             ; If the letter is q
+        je _end                     ; Exit
+    jmp display_menu        ; Else, show menu
+
+pattern:
+    ; Clean screen
+    call clear_screen
+    call show_pmenu
+    .reading:
+        push keybuffer          ; Pass Keybuffer 
+        call read_keystroke     ; Call
+    pattern_option:
+        xor rax, rax
+        mov al, byte[keybuffer]
+        ; If ESC, menu
+        cmp al, 0x1b
+        je display_menu
+        ; if less than 1, menu
+        cmp al, &quot;1&quot;
+        jl pattern
+        ; If more than 3, menu
+        cmp al, &quot;3&quot;
+        jg pattern
+        ; Else, display pattern
+        push rax                    ; Letter/Number
+        mov rbx, [ttyfd]
+        push rbx                        ; Arduino TTY File Descriptor
+        call arduino_display_pattern    ; Displaying things on screen 
+        mov r12, rax                    ; Get error code
+        ; Clean stack
+        push 2
+        call clean_stack
+    jmp pattern
+
+letter:
+    ; Clean the screen
+    call clear_screen
+    call show_lmenu
+    .reading:
+        push keybuffer          ; Pass Keybuffer 
+        call read_keystroke     ; Call
+    letter_options:
+        xor rax, rax
+        mov al, byte[keybuffer]
+        cmp al, 0x1b
+        je display_menu
+        ; If not ESC; let's show it in the matrix
+        push rax                    ; Letter/Number
+        mov rbx, [ttyfd]
+        push rbx                    ; Arduino TTY File Descriptor
+        call arduino_display_char   ; Displaying things on screen 
+        mov r12, rax                ; Get error code
+        ; Clean stack
+        push 2
+        call clean_stack
+        ; Ok Message
+        cmp r12, -1
+        je error
+        jmp letter.reading
+        error:              ; Invalid Character
+            push EINVCHAR
+            push EINVCHARS
+            call print_stdout
+            push 2
+            call clean_stack
+            ; Clean STDIN reading from message (h4x)
+            push STDIN
+            push databuffer
+            push databuffers
+            call read_from_fd
+            ; Clean stack
+            push 3
+            call clean_stack
+        jmp letter.reading
+
+_end_error:
+    push ENOFILE
+    push ENOFILES
+    call print_stdout
+    ; Cleaning stack
+    pop rax
+    pop rax
+    xor rax, rax
+
+_end:
+    ; Close file
+    mov r12, [ttyfd]
+    push r12
+    call close_file
+    pop rax             ; Clean Stack
+    mov rax, SYS_EXIT
+    mov rdi, 0
+    syscall 
+</code></pre>
+
+<p><strong>Procedimientos (procedures.asm)</strong><br />
+<pre><code class="nasm">;_______________________________________________________________________________
+; General Procedures ASM file                                                  |
+; Last Modified: mar 24 may 2016 13:42:48 CDT                                  |
+; Author: José Carlos López Gaona                                              |
+;                                                                              |
+;                                                                              |
+;______________________________________________________________________________|
+
+; Basic linux RAX syscall'
+%define SYS_EXIT    0x3c
+%define SYS_READ    0x0
+%define SYS_WRITE   0x1
+%define SYS_OPEN    0x2
+%define SYS_CLOSE   0x3
+; Basic File Descriptors
+%define STDIN       0x0
+%define STDOUT      0x1
+; 8 Bit size
+%define CHARSIZE    64
+
+section .data
+    ; VT 100 control codes
+    clear:      db      0x1b,&quot;[2J&quot;
+    clearl:     equ     $-clear
+    curhome:    db      0x1b,&quot;[H&quot;
+    curhomel:   equ     $-curhome
+    ; Menu
+    menu:       db  &quot;Matriz de LED's&quot;,10,&quot;Elija una opción: &quot;,10
+    menus:      equ $-menu
+    options:    db  &quot;p. Patrón&quot;,10,&quot;l. Letra&quot;,10,&quot;q. Salir&quot;,10
+    optionsl:   equ $-options
+    ; Letter menu
+    lmenu:      db  &quot;Recibiendo entrada y enviando:&quot;,10
+    lmenul:     equ $-lmenu
+    ; Pattern Menu
+    pmenu:      db  &quot;Elija un patrón:&quot;,10,&quot;1. Correo&quot;,10,&quot;2. Pacman&quot;,10,&quot;3. xD&quot;,10
+    pmenul:     equ $-pmenu
+    ; =========================================================================|
+    ; ================================= 8 Bit Font ============================|
+    ; =========================================================================|
+    ; =================== Last Modified: mié 25 may 2016 15:33:24 CDT =========|
+    ; Letters
+    letter_array:
+    a:          db       0x00,0x0E,0x11,0x03,0x0D,0x11,0x21,0x1F
+    b:          db       0x20,0x20,0x20,0x3E,0x21,0x21,0x21,0x3E
+    c:          db       0x00,0x00,0xFE,0x80,0x80,0x80,0x80,0xFF
+    d:          db       0x01,0x01,0x1F,0x21,0x21,0x21,0x21,0x1F
+    e:          db       0x00,0x00,0x3C,0x42,0x4C,0x50,0x60,0x3F
+    f:          db       0x01,0x02,0x02,0x07,0x02,0x02,0x02,0x02
+    g:          db       0xDE,0x22,0x22,0x3E,0x02,0x02,0x1C,0x00
+    h:          db       0x10,0x10,0x10,0x1E,0x11,0x11,0x11,0x11
+    i:          db       0x00,0x01,0x00,0x01,0x01,0x01,0x01,0x01
+    j:          db       0x00,0x01,0x00,0x01,0x01,0x01,0x01,0x07
+    k:          db       0x20,0x20,0x21,0x22,0x2C,0x30,0x2C,0x23
+    l:          db       0x00,0x02,0x02,0x02,0x02,0x02,0x02,0x01
+    m:          db       0x00,0x00,0x3A,0x25,0x25,0x25,0x25,0x25
+    n:          db       0x00,0x3E,0x21,0x21,0x21,0x21,0x21,0x21
+    o:          db       0x00,0x3E,0x41,0x41,0x41,0x41,0x41,0x3E
+    p:          db       0x0E,0x11,0x11,0x1F,0x10,0x10,0x10,0x10
+    q:          db       0x1C,0x22,0x22,0x26,0x1A,0x02,0x06,0x02
+    r:          db       0x00,0x00,0x2E,0x31,0x20,0x20,0x20,0x20
+    s:          db       0x00,0x00,0x1E,0x21,0x18,0x06,0x21,0x1E
+    t:          db       0x08,0x08,0x08,0x1C,0x08,0x08,0x09,0x06
+    u:          db       0x00,0x41,0x41,0x41,0x41,0x41,0x43,0x3D
+    v:          db       0x00,0x00,0x21,0x11,0x11,0x0A,0x0A,0x04
+    w:          db       0x00,0x00,0x29,0x29,0x29,0x29,0x29,0x16
+    x:          db       0x00,0x00,0x21,0x12,0x0C,0x0C,0x12,0x21
+    y:          db       0x00,0x11,0x11,0x0A,0x04,0x04,0x04,0x04
+    z:          db       0x00,0x00,0x3F,0x01,0x06,0x18,0x20,0x3F
+    letter_array_size:  equ     $-letter_array
+    ; Numbers
+    number_array:    
+    zero:       db       0x1E,0x31,0x31,0x29,0x29,0x25,0x23,0x1E
+    one:        db       0x00,0x00,0x02,0x06,0x02,0x02,0x02,0x07
+    two:        db       0x00,0x00,0x06,0x09,0x01,0x06,0x08,0x0F
+    three:      db       0x00,0x06,0x09,0x01,0x02,0x01,0x09,0x06
+    four:       db       0x00,0x02,0x06,0x0A,0x1F,0x02,0x02,0x02
+    five:       db       0x07,0x08,0x08,0x06,0x01,0x01,0x0E,0x00
+    six:        db       0x06,0x08,0x08,0x06,0x09,0x09,0x09,0x06
+    seven:      db       0x00,0x00,0x1F,0x01,0x02,0x04,0x08,0x10
+    eight:      db       0x00,0x06,0x09,0x09,0x06,0x09,0x09,0x06
+    nine:       db       0x00,0x06,0x09,0x09,0x07,0x01,0x01,0x01
+    numbersize: equ      $-number_array
+    ; Special
+    special_array:
+    mail:       db       0xFF,0x81,0xC3,0xA5,0x99,0x81,0x81,0xFF
+    pacman:     db       0x00,0x00,0x00,0x91,0x11,0x0A,0x8A,0x04
+    xD:         db       0x00,0x0E,0xA9,0xA9,0x49,0xA9,0xAE,0x00
+    special_array_size: equ     $-special_array
+    ;===========================================================================
+
+section .bss
+    stack_offset:   equ     8   ; Size of the stack, in this case, 8 bytes
+    charsize:       equ     8   ; Size of a character
+
+section .text
+
+GLOBAL print_stdout, read_keystroke, show_menu, clear_screen, open_file
+GLOBAL close_file, show_lmenu, open_file_parameter, write_to_fd, read_from_fd
+GLOBAL clean_stack, arduino_display_char, show_pmenu, arduino_display_pattern
+; Print Procedure - C Standard Parameters Handle (all in stack)
+; mar 24 may 2016 13:42:35 CDT
+; Receives (in order):
+;   - Text to print
+;   - Text size
+
+print_stdout:
+    mov rax, SYS_WRITE
+    mov rdi, STDOUT                 ; File Descriptor
+    mov rdx, [rsp+stack_offset]     ; Text size (bytes)
+    mov rsi, [rsp+stack_offset*2]   ; Memory address of text
+    syscall
+    ret
+
+; Reads a keystroke and writes it to memory
+; mar 24 may 2016 13:42:30 CDT
+; Receives:
+;   - Char buffer memory address
+; Modifies:
+;   - Char buffer memory
+
+read_keystroke:
+    mov rax, SYS_READ
+    mov rdi, STDIN
+    mov rsi, [rsp+stack_offset]         ; Moves address to register
+    mov rdx, 2                          ; Reads 2 bytes (Keystroke + Newline)
+    syscall
+    ret
+
+; Displays the menu on screen
+; mar 24 may 2016 13:42:24 CDT
+; Receives:
+;   - Nothing
+; Returns:
+;   - nothing
+; Modifies:
+;   - RAX
+
+show_menu:
+    push menu
+    push menus
+    call print_stdout
+    pop rax
+    pop rax
+    push options
+    push optionsl
+    call print_stdout
+    pop rax
+    pop rax
+    xor rax, rax
+    ret
+
+; Displays the letter menu, where we receive the input
+; Last modified: mié 25 may 2016 21:33:56 CDT
+; Receives:
+;   - nothing
+; Modifies:
+;   - RAX
+
+show_lmenu:
+    push lmenu
+    push lmenul
+    call print_stdout
+    pop rax
+    pop rax
+    xor rax, rax
+    ret
+
+; Displays the pattern Menu, where we receive the input
+; Last modified jue 26 may 2016 05:59:12 CDT
+; Receives: Nothing
+
+show_pmenu:
+    push pmenu
+    push pmenul
+    call print_stdout
+    pop rax
+    pop rax
+    xor rax, rax
+    ret
+
+; Clears the screen
+; Last Modified: mar 24 may 2016 13:47:32 CDT
+; Receives:
+;   - Nothing
+; Returns:
+;   - Nothing
+; Modifies:
+;   - RAX
+
+clear_screen:
+    push clear
+    push clearl
+    call print_stdout
+    pop rax
+    pop rax
+    push curhome
+    push curhomel
+    call print_stdout
+    pop rax
+    pop rax
+    xor rax, rax
+    ret
+
+; Builds the pattern to the memory address pointed
+; Last modified: May, 24
+; Receives (in order):
+;   - &quot;Video&quot; memory address
+; 
+; Asks for user input for each pattern
+
+build_pattern:
+    ret
+
+; Opens a file and saves the file descriptor to the address designed
+; Last Modified: mié 25 may 2016 21:28:48 CDT
+; Receives (in order):
+;   - FD Memory Address
+;   - Filename (memory address)
+;   - Open Flags
+;   - Mode
+;  Modifies:
+;   - RAX; RDX; RSI; RDI; R12
+open_file:
+    mov rax, SYS_OPEN
+    mov rdx, [rsp+stack_offset]     ; Mode
+    mov rsi, [rsp+stack_offset*2]   ; Flags
+    mov rdi, [rsp+stack_offset*3]   ; Filename
+    mov r12, [rsp+stack_offset*4]   ; FD Storage Address
+    syscall
+    mov [r12], rax                  ; Move new FD to memory
+    ret
+
+; Closes a file given the file descriptor
+; Last modified: mié 25 may 2016 21:29:22 CDT
+; Receives (in order):
+;   - File Descriptor
+close_file:
+    mov rax, SYS_CLOSE              ; Close File Syscall
+    mov rdi, [rsp+stack_offset]     ; File Descriptor
+    syscall
+    ret
+
+; Opens a file within the first parameter given in the stack and saves it
+;   to the designated memory address.
+; Last Modified: mié 25 may 2016 21:38:42 CDT
+; Receives:
+;   - (6 in stack) Filename
+;   - FD Memory Address
+;   - Open Flags
+;   - Mode
+; Returns:
+;   Nothing
+; Modifies:
+;   - RAX; RDX; RSI; RDI; R12
+
+open_file_parameter:
+    mov rax, SYS_OPEN
+    mov rdx, [rsp+stack_offset]     ; Mode
+    mov rsi, [rsp+stack_offset*2]   ; Flags
+    mov r12, [rsp+stack_offset*3]   ; FD Storage Address
+    mov rdi, [rsp+stack_offset*6]   ; Filename
+    syscall
+    mov [r12], rax                  ; Move new FD to memory
+    ret
+
+; Writes data to FD
+; Last Modified: mié 25 may 2016 22:15:27 CDT
+; Receives:
+;   - Data address
+;   - Size
+;   - FD
+; Returns:
+;   Nothing
+; Modifies:
+
+write_to_fd:
+    mov rax, SYS_WRITE              ; Write Syscall
+    mov rdi, [rsp+stack_offset]     ; File Descriptor
+    mov rdx, [rsp+stack_offset*2]   ; Size
+    mov rsi, [rsp+stack_offset*3]   ; Data Address
+    syscall
+    ret
+
+; Reads from FD and saves to specified buffer
+; Last Modified: mié 25 may 2016 22:44:10 CDT
+; Receives:
+;   - FD
+;   - Buffer Address
+;   - Bytes to read
+; Returns:
+;   - nothing
+; Modifies:
+;   - RAX; RDX; RSI; RDI
+read_from_fd:
+    mov rax, SYS_READ
+    mov rdx, [rsp+stack_offset]         ; Amount of bytes to read
+    mov rsi, [rsp+stack_offset*2]       ; BUffer Address
+    mov rdi, [rsp+stack_offset*3]       ; File Descriptor
+    syscall
+    ret
+
+; Cleans the parameters passed in the stack (counting this call parameter)
+; Last Modified: jue 26 may 2016 04:26:19 CDT
+; Receives
+;   - Parameter number to clean
+; Returns
+;   - Nothing
+; Modifies:
+;   - RAX, RBX, RCX
+clean_stack:
+    pop rax             ; Save Return Address
+    pop rcx             ; Parameter number
+    erase:
+        pop rbx         ; Take out parameter
+        dec rcx         ; Decrement counter
+        cmp rcx, 0      ; Check if done
+        jg erase
+    push rax            ; Restore Return address
+    ret
+
+; Displays a predefined pattern on the led matrix
+; Last modified: jue 26 may 2016 06:07:08 CDT
+; Receives:
+;   - Pattern (number)
+;   - File Descriptor
+; Options:
+;   1. Correo
+;   2. Pacman
+;   3. xD
+arduino_display_pattern:
+    mov r12, [rsp+stack_offset]     ; FD
+    mov rax, [rsp+stack_offset*2]   ; Move desired pattern to rax
+    sub rax, 0x31                   ; Convert to number
+    lea rbx, [special_array+(8*rax)]
+    push rbx                            ; Pattern Effective Address
+    push charsize                       ; Character Size
+    push r12                            ; Arduino File Descriptor
+    call write_to_fd
+    ; Cleaning
+    pop rax
+    pop rax
+    pop rax
+    ret
+
+; Shows a letter on the led matrix
+; Last modified: jue 26 may 2016 04:50:59 CDT
+; Receives:
+;   - Letter to display
+;   - File Descriptor of Arduino
+; Returns:
+;   - Nothing
+; Modifies:
+
+arduino_display_char:
+    mov r12, [rsp+stack_offset]     ; FD
+    mov rax, [rsp+stack_offset*2]   ; Move desired letter to RAX
+    cmp rax, 97                     ; If letter is greater or equal than 97
+    jge .display                         ; Display it
+    ; Otherwise, it's maybe a number or a capital letter
+    cmp rax, 65                     ; If it's a capital letter
+    jge .lowercase                        ; make it lowercase
+    ; Otherwise, maybe it's a number
+    cmp rax, 48                     ; If it's a number
+    jge .number                          ; Print it
+    ; Otherwise, it's other thing and should be ignored
+    jmp .asl_end
+
+    .number:
+        cmp rax, 57                         ; Check if valid number
+        jg .asl_e_end                           ; NaN, error
+        sub rax, 48                         ; Convert it to number
+        lea rbx, [number_array+(8*rax)]     ; Load number effective address
+        push rbx                            ; Number Effective Address
+        push charsize                       ; Character Size
+        push r12                            ; Arduino File Descriptor
+        call write_to_fd
+        jmp .asl_end
+    .lowercase:
+        cmp rax, 90                         ; Check if valid capital letter
+        jg .asl_e_end                           ; If not, error
+        add rax, 32                         ; Convert it to lowercase
+    .display:
+        cmp rax, 122                        ; Check if it's a valid letter
+        jg .asl_e_end
+        sub rax, 97                         ; Get letter offset
+        lea rbx, [letter_array+(8*rax)]     ; Load letter effective address
+        ; Writing out
+        push rbx
+        push charsize
+        push r12
+        call write_to_fd
+        jmp .asl_end
+    .asl_e_end:
+        mov rax, -1
+        ret
+    .asl_end:
+        ; Cleaning
+        pop r12
+        pop r12
+        pop r12
+        ret
+</code></pre></p>
+<p>Para ensamblar/enlazar el código, sólo tiene que tener la herramienta <strong>make</strong> y ejecutar en la terminal lo siguiente:<br />
+<pre><code class="sh">make
+</code></pre><br />
+Esto ejecutará el archivo <strong>Makefile</strong> que contiene lo siguiente:<br />
+<pre><code class="Makefile">main: main.o
+    ld -o main main.o procedures.o
+main.o: main.asm
+    nasm -f elf64 -g -F stabs main.asm -l main.lst
+    nasm -f elf64 -g -F stabs procedures.asm -l procedures.lst
+
+clean:
+    @rm -f *.o *.lst output
+</code></pre><br />
+Este se encarga de ensamblar ambos archivos <strong>.asm</strong> y después los enlaza. </p>
+<h2 id="ejecutando"><a name="user-content-ejecutando" href="#ejecutando" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ejecutando</h2>
+<p>El programa está configurado para ejecutarse de la siguiente manera:<br />
+<pre><code>./main &lt;ruta archivo puerto serial&gt;
+</code></pre><br />
+Por ejemplo, en mi caso, el archivo es <strong>/dev/ttyACM0</strong>:<br />
+<pre><code>./main /dev/ttyACM0
+</code></pre></p>
+<p>En lo cual, se podrá controlar por medio de un menú sencillo la manipulación:<br />
+<div class="center image"><img src="assets/menu.png" alt=""></div></p>
+<h1 id="demostracion"><a name="user-content-demostracion" href="#demostracion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Demostración</h1>
+<div class="center">
+    <video type="media/mp4" controls width="720p">
+        <source src="assets/demo.mp4">
+    </video>
+</div></article></body></html>
