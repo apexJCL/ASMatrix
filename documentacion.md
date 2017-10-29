@@ -60,7 +60,9 @@
 <div class="title">
     <p>Matriz de LED's - Linux x64 ASM</p>
 </div>
+
 ---
+
 ## Introducción
 El proyecto de la matriz de LED's consta de la construcción de la misma, así como de su control por medio del puerto **Serial** del Arduino y un programa hecho en ensamblador de 64 bits para **Linux**:
 
